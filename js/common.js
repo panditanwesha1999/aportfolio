@@ -101,5 +101,11 @@ $slider.slick({
   });
 
     })
+
+
+
+     $(document).ready(function(){
+         AOS.init();
+     })
     
    

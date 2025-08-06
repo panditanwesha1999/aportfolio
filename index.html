@@ -5,15 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <title>Scalyx</title>
+    <title>aportfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/slick.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <div class="row">
+  <!-- header start -->
     <header class="main-head col-xxl-2 col-xl-1 col-lg-1 ">
        
             <div class="sidebar">
@@ -33,14 +35,14 @@
   </div>
 
   <ul class="nav-links">
-    <li class="menu active"><a href=""><i class="fa-solid fa-user"></i>About us</a></li>
-    <li class="menu"><a href=""><i class="fa-solid fa-list-check"></i>Projects</a></li>
-    <li class="menu"><a href=""><i class="fa-solid fa-file"></i>Resume</a></li>
-    <li class="menu"><a href=""><i class="fa-solid fa-address-card"></i>Contacts</a></li>
+    <li class="menu active"><a href="#about-us"><i class="fa-solid fa-user"></i>About us</a></li>
+    <li class="menu"><a href="#project"><i class="fa-solid fa-list-check"></i>Projects</a></li>
+    <li class="menu"><a href="#resume"><i class="fa-solid fa-file"></i>Resume</a></li>
+    <li class="menu"><a href="#contuct"><i class="fa-solid fa-address-card"></i>Contacts</a></li>
   </ul>
 
   <div class="hire-me-btn">
-  <button class="hire-button">Hire Me</button>
+ <a href="#contuct"> <button class="hire-button">Hire Me</button></a>
 </div>
 
 </div>
@@ -49,20 +51,23 @@
     </header>
 
 
-    <div class="col-xxl-10 col-xl-11 col-lg-11 ">
 
-    <section class="about-us">
+<!-- header end -->
+    <div class="col-xxl-10 col-xl-11 col-lg-11 ">
+<!-- about-us start -->
+    <section class="about-us" id="about-us">
  <div class="container hero">
     <div class="row  hero-content align-items-center">
-      <div class="col-md-6 text-center text-md-start">
-        <h5>HI, I AM A HTML</h5>
+      <div  data-aos="fade-up"
+     data-aos-duration="3000" class="col-md-6 text-center text-md-start">
+        <h5  >HI, I AM A HTML</h5>
      <h1 class="typewriter-text"></h1>
    <p>I build responsive and modern websites using HTML and CSS<br>
-          Explore my <a href="#">project portfolio</a> and <a href="#">online resume</a>.
+          Explore my <a href="#project">project portfolio</a> and <a href="#resume">online resume</a>.
         </p>
         <div class="d-flex gap-3 mt-4 justify-content-center justify-content-md-start">
-          <button class="cmn-btn"> View PROJECT</button>
-          <button class="cmn-btn"> View Resume</button>
+         <a href="#project"> <button class="cmn-btn"> View PROJECT</button></a>
+          <a href="anwesha cv 2025.pdf"><button class="cmn-btn"> View Resume</button></a>
         </div>
       </div>
       <div class="col-md-6  text-center">
@@ -76,25 +81,28 @@
   <hr>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-      <div>
+      <div   data-aos="fade-up"
+     data-aos-duration="3000">
        
-        <h2 class="gradient-border display-5 fw-bold mb-3">What I do</h2>
+        <h2 class="gradient-border display-5 fw-bold mb-3" >What I do</h2>
 
         <p class="lead">
           I design and build responsive websites using HTML, CSS, Webflow, and jQuery. I add interactivity with JavaScript and focus on clean, user-friendly design.
 
  Check out my 
-          <a href="#" class="text-info">online resume</a> 
+          <a href="#resume" class="text-info">online resume</a> 
           
         </p>
       
-      <a href="#" class="cmn-btn">→ Project Work</a>
+      <a href="#project" class="cmn-btn">→ Project Work</a>
     </div>
     
 
     <div class="row gy-4 card-section">
       <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3">
+      <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1500" class="col-md-6 col-lg-3">
         <div class="card bg-dark text-white h-100 p-3">
           <div class="d-flex">
             <img class="html" src="images/html.png" alt="">
@@ -106,7 +114,9 @@
       </div>
 
       <!-- Card 2 -->
-     <div class="col-md-6 col-lg-3">
+     <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2000" class="col-md-6 col-lg-3">
         <div class="card bg-dark text-white h-100 p-3">
           <img class="webflow" src="images/webflow-icon.svg" alt="">
           <h5 class="">WEBFLOW</h5>
@@ -118,7 +128,9 @@
 
 
       <!-- Card 3 -->
-     <div class="col-md-6 col-lg-3">
+     <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2500" class="col-md-6 col-lg-3">
         <div class="card bg-dark text-white h-100 p-3">
            <div class="d-flex">
             <img class="jquery" src="images/jQuery.svg" alt="">
@@ -132,7 +144,9 @@
 
 
       <!-- Card 4 -->
-     <div class="col-md-6 col-lg-3">
+     <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="3000" class="col-md-6 col-lg-3">
         <div class="card bg-dark text-white h-100 p-3">
           <img class="html" src="images/bootstrap-5-logo-icon.svg" alt="">
           
@@ -148,10 +162,11 @@
       
         <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div  data-aos="fade-up"
+     data-aos-duration="3000" class="col-6">
            <h2 class=" display-5 fw-bold mb-3">I’m open for projects</h2>
            <p class="card-des">I may be a fresher, but I’m passionate about web development and excited to work on real-world projects. Let’s connect!</p>
-            <a href="#" class="cmn-btn">HIRE ME</a>
+            <a href="#contuct" class="cmn-btn">HIRE ME</a>
  
           </div>
           <div class="col-6 text-ends">
@@ -162,10 +177,13 @@
 
         </div>
     </section>
+<!-- aboutus end -->
 
-    <section class="project">
+<!-- project start -->
+    <section class="project" id="project">
          <div class="container py-5">
-  <div class=" mb-4">
+  <div  data-aos="fade-up"
+     data-aos-duration="3000" class=" mb-4">
     
       <h2 class="gradient-border display-5 fw-bold mb-3">FEATURED PROJECT</h2>
       <p class="project-subtitle">These are some of my most meaningful projects, where I applied my skills in HTML, CSS, JavaScript, jQuery, and Webflow to solve real design challenges. Each one reflects my growth as a developer and my passion for clean, responsive, and user-friendly websites..</p>
@@ -175,7 +193,8 @@
 
   <div class="row">
     <!-- Project 1 -->
-    <div class="col-md-6">
+    <div  data-aos="fade-up"
+     data-aos-duration="3000" class="col-md-6">
       <div class="project-card">
        <div class="img-wrapper">
         <a href=""><img src="images/resturent.png" alt="Crypto Website" class="project-img"></a> 
@@ -198,7 +217,8 @@
     </div>
 
     <!-- Project 2 -->
-    <div class="col-md-6">
+    <div  data-aos="fade-up"
+     data-aos-duration="3000" class="col-md-6">
       <div class="project-card">
         <div class="img-wrapper">
            <a href=""><img src="images/resort.png" alt="Crypto Website" class="project-img"></a> 
@@ -221,7 +241,8 @@
     </div>
 
     <!-- Project 3 -->
-    <div class="col-md-6">
+    <div  data-aos="fade-up"
+     data-aos-duration="3000" class="col-md-6">
       <div class="project-card">
         <div class="img-wrapper">
            <a href=""><img src="images/webhosting.png" alt="Crypto Website" class="project-img"></a> 
@@ -245,7 +266,8 @@
     </div>
 
     <!-- Project 4 -->
-    <div class="col-md-6">
+    <div  data-aos="fade-up"
+     data-aos-duration="3000" class="col-md-6">
       <div class="project-card">
          <div class="img-wrapper">
           <a href=""><img src="images/craft.png" alt="Crypto Website" class="project-img"></a> 
@@ -270,23 +292,24 @@
 </div>
     </section>
 
-
+<!-- project end -->
    
+<!-- resume section start -->
 
-
-<section>
+<section id="resume">
 <div class="header-top d-flex">
   <div class="container">
    <div class="d-flex">
     <h2 class="gradient-border display-5 fw-bold mb-3">online resume</h2>
-    <a href="#" class="cmn-btn d-btn">📄 Download PDF Version</a>
+    <a href="anwesha cv 2025.pdf" class="cmn-btn d-btn"> Download PDF Version</a>
   </div>
 
   <!-- Resume Body -->
-  <div class="resume-wrapper">
+  <div  data-aos="fade-up"
+     data-aos-duration="3000" class="resume-wrapper">
     <div class="row">
       <!-- Left Column -->
-      <div class="col-md-8">
+      <div  class="col-md-8">
         <h2 class="mb-0">Anwesha Pandit</h2>
        <p>Design-Driven frontend Developer(Fresher)</p>
         <div class="d-flex align-items-center gap-3 mb-3 profile-dt">
@@ -353,8 +376,14 @@
 </div>
 
 </section>
-<section class="contact-section py-5 px-4">
-    <div class="container">
+<!-- resume section end -->
+ <!-- contact section start -->
+
+
+
+<section class="contact-section py-5 px-4" id="contuct">
+    <div  data-aos="fade-up"
+     data-aos-duration="3000" class="container">
        <h2 class="gradient-border display-5 fw-bold mb-3">CONTACT DETAILES</h2>
        <p>
     I'm always excited to collaborate on meaningful web projects, whether it's designing a stunning interface or coding clean, responsive layouts.If you're looking for a passionate front-end developer who values creativity, clarity, and continuous learning — I'm ready to join your team or contribute to your vision.
@@ -384,7 +413,9 @@
       </div>
     </div>
   </section>
+<!-- contact section end -->
 
+<!-- footer start -->
 <footer class="footer-dark   py-3 mt-3">
   <div class="container">
     <div class="row justify-content-between text-center text-md-start">
@@ -398,7 +429,7 @@
   </div>
 </footer>
 
-
+<!-- footer end -->
 
 
 
@@ -416,6 +447,7 @@
 
     <!-- Jquery-->
     <script src="js/jquery-min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
